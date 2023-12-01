@@ -1,0 +1,30 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/example.umd.cjs",
+  "module": "./dist/example.js",
+  "types": "./dist/types.d.ts",
+  "exports": {
+    ".": {
+      "default": "./dist/example.umd.cjs",
+      "import": "./dist/example.js",
+      "types": "./dist/types.d.ts"
+    }
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite build -w",
+    "build": "vite build"
+  },
+  "author": "Matthias Hryniszak <padcom@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "~5.0.4",
+    "vite": "^5.0.4",
+    "vite-plugin-dts": "^3.6.4"
+  },
+  "engines": {
+    "node": "21.3.0"
+  }
+}
